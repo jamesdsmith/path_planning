@@ -36,9 +36,6 @@ include_directories(${CMAKE_SOURCE_DIR}/include/cpp/)
 file(GLOB_RECURSE path_srcs ${CMAKE_SOURCE_DIR}/src/cpp/*.cpp)
 add_library(path_planning ${path_srcs})
 
-install(DIRECTORY ${CMAKE_SOURCE_DIR}/include/cpp/ DESTINATION include)
-install(TARGETS path_planning DESTINATION lib)
-
 # Set up output directory for executables.
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin/)
 
